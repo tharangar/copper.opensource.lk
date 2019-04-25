@@ -1,0 +1,29 @@
+site_name: 'Copper mail'
+site_description: 'Copper email solution documentation'
+site_author: 'Lanka Software Foundation'
+site_url: 'https://copper.opensource.lk'
+
+repo_name: 'LSFLK/Copper'
+repo_url: 'https://github.com/LSFLK/Copper'
+
+copyright: 'Copyright &copy; 2018 - 2019 Lanka Software Foundation'
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'amber'
+    accent: 'amber'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'images/copper_logo.svg'
+  language: 'en'
+  favicon: 'images/favicon.ico'
+
+# Extensions
+markdown_extensions:
+  - admonition:
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
