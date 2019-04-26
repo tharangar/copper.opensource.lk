@@ -15,8 +15,10 @@ nav:
     - Installation: Installation.md
     - Initial Configuration: Configuration.md
     - Client Configuration: CConfiguration.md
-    - Usage Features: userfeature.md
-    - Backups: Backups.md
+    - Groupware Features: userfeature.md
+    - Backup & Restoration: Backups.md
+    - Centralized Management: Hub.md
+    - Email Security: Security.md
     
 theme:
   name: 'material'
