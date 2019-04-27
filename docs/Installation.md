@@ -84,3 +84,5 @@ Further kubernetes services also should be checked. All LoadBalancers External I
 $kubectl get services -n copper
 ```
 ![Check copper services](../images/installation/services.png)
+
+ 

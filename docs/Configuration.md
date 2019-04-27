@@ -18,6 +18,9 @@ After successfully installation suing shell file then Basic configurations requi
 
     - Once successully loged in then you have to import some test users creation file  (ldap.ldif).
 
+Importing ldap.ldif created while installation from phpldapadmin.
+
+![PHPLDAPADMIN ](../images/configuration/phpldap.png)
 
 ## Testing RSPAMD
 
@@ -26,6 +29,9 @@ After successfully installation suing shell file then Basic configurations requi
     URL :http://localhost:11334/
 
     - Password : <password provided at installation step>
+
+![RSPAM interface ](../images/configuration/rspam.png)
+
     
 
 ## Configure groupoffice
@@ -53,6 +59,13 @@ It is must to follow bellow steps to make sure you have successfuly connected wi
 3. Then go to System setting and Authentication . If it has not LDAP section then refresh the page.
 
 4. Clikc on "+" mark to add ldap connection provide following parameters.
+
+5. Then refresh the page and go to System setting -- > Authentication tab
+
+Interface of Authentication tab.
+
+ ![Authentication](../images/configuration/ldap1.png)
+
 
 ### Configure LDAP Server
 
@@ -82,6 +95,10 @@ It is must to follow bellow steps to make sure you have successfuly connected wi
 
 Check on create email server for users
 
+These all configurations are in same interface.
+
+![LDAP configuration in groupoffice ](../images/configuration/ldap2.png)
+
 ### IMAP server configuration
 
     IMAP Host : email
@@ -109,8 +126,12 @@ Check on create email server for users
 Finaly add the user to the Internal group
 
 <p align="justify">
-Now groupoffice configuration is complete. Then you can can log using your email account to group office for your domain.
+Now groupoffice configuration is complete. Then you can can log using your email account to group office for your domain. 
 </p>
+
+GroupOffice mail client.
+
+![GroupOffice mail client](../images/configuration/mail.png)
 
 ## Password change for users.
 
@@ -125,6 +146,7 @@ https://localhost:4343/service/
 
 use provide the usernmae , current password, new password and confirme new password.
 
+ ![User self password change](../images/configuration/password.png)
 
 Thats it . Usre's account is users now.
 
