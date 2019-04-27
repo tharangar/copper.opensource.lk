@@ -1,0 +1,779 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Copper email solution documentation">
+      
+      
+        <link rel="canonical" href="https://copper.opensource.lk/Configuration/">
+      
+      
+        <meta name="author" content="Lanka Software Foundation">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.2">
+    
+    
+      
+        <title>Initial Configuration - Copper mail</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ffa000">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#initial-configuration" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://copper.opensource.lk" title="Copper mail" class="md-header-nav__button md-logo">
+          
+            <img src="../images/copper_logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Copper mail
+            </span>
+            <span class="md-header-nav__topic">
+              Initial Configuration
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/LSFLK/Copper/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    LSFLK/Copper
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://copper.opensource.lk" title="Copper mail" class="md-nav__button md-logo">
+      
+        <img src="../images/copper_logo.svg" width="48" height="48">
+      
+    </a>
+    Copper mail
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/LSFLK/Copper/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    LSFLK/Copper
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Prerequisites/" title="Prerequisites" class="md-nav__link">
+      Prerequisites
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Initial Configuration
+      </label>
+    
+    <a href="./" title="Initial Configuration" class="md-nav__link md-nav__link--active">
+      Initial Configuration
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testing-phpldapadmin-user-management" title="Testing phpldapadmin user management" class="md-nav__link">
+    Testing phpldapadmin user management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-rspamd" title="Testing RSPAMD" class="md-nav__link">
+    Testing RSPAMD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-groupoffice" title="Configure groupoffice" class="md-nav__link">
+    Configure groupoffice
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-ldap-authenticaiton-module-to-the-groupoffice" title="Adding LDAP Authenticaiton module to the GroupOffice" class="md-nav__link">
+    Adding LDAP Authenticaiton module to the GroupOffice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-ldap-server" title="Configure LDAP Server" class="md-nav__link">
+    Configure LDAP Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imap-server-configuration" title="IMAP server configuration" class="md-nav__link">
+    IMAP server configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smtp-server-configuration" title="SMTP server configuration" class="md-nav__link">
+    SMTP server configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-adding-to-a-group" title="Users adding to a group" class="md-nav__link">
+    Users adding to a group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-change-for-users" title="Password change for users." class="md-nav__link">
+    Password change for users.
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../CConfiguration/" title="Client Configuration" class="md-nav__link">
+      Client Configuration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../userfeature/" title="Groupware Features" class="md-nav__link">
+      Groupware Features
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Backups/" title="Backup & Restoration" class="md-nav__link">
+      Backup & Restoration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshoot/" title="Troubleshoot" class="md-nav__link">
+      Troubleshoot
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Hub/" title="Central Supervision" class="md-nav__link">
+      Central Supervision
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../issues/" title="Email security" class="md-nav__link">
+      Email security
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testing-phpldapadmin-user-management" title="Testing phpldapadmin user management" class="md-nav__link">
+    Testing phpldapadmin user management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-rspamd" title="Testing RSPAMD" class="md-nav__link">
+    Testing RSPAMD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-groupoffice" title="Configure groupoffice" class="md-nav__link">
+    Configure groupoffice
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-ldap-authenticaiton-module-to-the-groupoffice" title="Adding LDAP Authenticaiton module to the GroupOffice" class="md-nav__link">
+    Adding LDAP Authenticaiton module to the GroupOffice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-ldap-server" title="Configure LDAP Server" class="md-nav__link">
+    Configure LDAP Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imap-server-configuration" title="IMAP server configuration" class="md-nav__link">
+    IMAP server configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smtp-server-configuration" title="SMTP server configuration" class="md-nav__link">
+    SMTP server configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-adding-to-a-group" title="Users adding to a group" class="md-nav__link">
+    Users adding to a group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-change-for-users" title="Password change for users." class="md-nav__link">
+    Password change for users.
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/LSFLK/Copper/edit/master/docs/Configuration.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="initial-configuration">Initial Configuration<a class="headerlink" href="#initial-configuration" title="Permanent link">&para;</a></h1>
+<p align="justify">
+After successfully installation suing shell file then Basic configurations requied to make sure that the systme is up and running inorder. First you have to check userbase using phpldapadmin interface and then configure groupoffice to access your email server. thats it.
+</p>
+
+<h2 id="testing-phpldapadmin-user-management">Testing phpldapadmin user management<a class="headerlink" href="#testing-phpldapadmin-user-management" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>URL :https://localhost:4433
+// Hear the read only usr name and pasword should be provided for cn.
+Ex : username : cn=readonly,dc=copper,dc=opensource,dc=lk
+password : readonlypassword
+
+
+
+- Once successully loged in then you have to import some test users creation file  (ldap.ldif).
+</pre></div>
+
+
+<h2 id="testing-rspamd">Testing RSPAMD<a class="headerlink" href="#testing-rspamd" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>RSPAMD is the spam filtering service in this email solution.
+
+URL :http://localhost:11334/
+
+- Password : &lt;password provided at installation step&gt;
+</pre></div>
+
+
+<h2 id="configure-groupoffice">Configure groupoffice<a class="headerlink" href="#configure-groupoffice" title="Permanent link">&para;</a></h2>
+<p>URL :http://localhost:8004</p>
+<p>You will see the installation page of the groupoffice package.
+First create the admin user and start installation.</p>
+<p>Then login from the admin user name and start the configuration.</p>
+<p align="justify">
+Groupoffice is a userfriendly groupware and it has all coloborative tools which are requied for any organization in the world now. Next groupoffice groupware should be configured to work with email server.
+It is must to follow bellow steps to make sure you have successfuly connected with the emailserver and openldap server.
+
+</p>
+
+<h3 id="adding-ldap-authenticaiton-module-to-the-groupoffice">Adding LDAP Authenticaiton module to the GroupOffice<a class="headerlink" href="#adding-ldap-authenticaiton-module-to-the-groupoffice" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Login as admin</p>
+</li>
+<li>
+<p>Then go to Admin menu - &gt; Modules  and add checked on community -&gt; LDAP Authenticator</p>
+</li>
+<li>
+<p>Then go to System setting and Authentication . If it has not LDAP section then refresh the page.</p>
+</li>
+<li>
+<p>Clikc on "+" mark to add ldap connection provide following parameters.</p>
+</li>
+</ol>
+<h3 id="configure-ldap-server">Configure LDAP Server<a class="headerlink" href="#configure-ldap-server" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>Domains : Domain name configured for ldap server
+
+Hostname : LDAP server host name
+
+Protocol : LDAP protocol
+
+ENCRIPTION : TLS
+
+Checked on Use Authentication
+
+Provide Username and password for ldap readonly user.
+
+Ex : usrname : cn=raa,dc=copper,dc=test,dc=lk
+
+Ex : password : XXXX
+
+Userbase details of LDAP server
+
+username attribute  : uid
+
+peopleDN : Ex : ou=Users,dc=copper,dc=test,dc=lk
+
+groupDN : Ex : ou=groups,dc=copper,dc=test,dc=lk
+</pre></div>
+
+
+<p>Check on create email server for users</p>
+<h3 id="imap-server-configuration">IMAP server configuration<a class="headerlink" href="#imap-server-configuration" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>IMAP Host : email
+
+Port      : 143
+
+Encription: TLS
+
+Ubcheck validate certificate
+</pre></div>
+
+
+<h3 id="smtp-server-configuration">SMTP server configuration<a class="headerlink" href="#smtp-server-configuration" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>HOST      : email
+
+Port      : 587
+
+Check on use user credentials.
+
+Encription : TLS
+
+Uncheck validate certificate
+</pre></div>
+
+
+<h3 id="users-adding-to-a-group">Users adding to a group<a class="headerlink" href="#users-adding-to-a-group" title="Permanent link">&para;</a></h3>
+<p>Finaly add the user to the Internal group</p>
+<p align="justify">
+Now groupoffice configuration is complete. Then you can can log using your email account to group office for your domain.
+</p>
+
+<h2 id="password-change-for-users">Password change for users.<a class="headerlink" href="#password-change-for-users" title="Permanent link">&para;</a></h2>
+<p align="justify">
+By default test users password is set to "coppermail@lsf" or when system admin set a password for specific users it will be known to administrator. So once a new user log in to the system after admin
+provided the credential user has to change the password. There is a seperate interface for this perpose.
+use provide the usernmae , current password, new password and confirme new password.
+</p>
+
+<p>https://localhost:4343/service/</p>
+<p>use provide the usernmae , current password, new password and confirme new password.</p>
+<p>Thats it . Usre's account is users now.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Installation/" title="Installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Installation
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../CConfiguration/" title="Client Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Client Configuration
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2019 Lanka Software Foundation
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.267712eb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

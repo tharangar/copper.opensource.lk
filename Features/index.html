@@ -1,0 +1,921 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Copper email solution documentation">
+      
+      
+        <link rel="canonical" href="https://copper.opensource.lk/Features/">
+      
+      
+        <meta name="author" content="Lanka Software Foundation">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.2">
+    
+    
+      
+        <title>Features - Copper mail</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ffa000">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#features" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://copper.opensource.lk" title="Copper mail" class="md-header-nav__button md-logo">
+          
+            <img src="../images/copper_logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Copper mail
+            </span>
+            <span class="md-header-nav__topic">
+              Features
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/LSFLK/Copper/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    LSFLK/Copper
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://copper.opensource.lk" title="Copper mail" class="md-nav__button md-logo">
+      
+        <img src="../images/copper_logo.svg" width="48" height="48">
+      
+    </a>
+    Copper mail
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/LSFLK/Copper/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    LSFLK/Copper
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Features
+      </label>
+    
+    <a href="./" title="Features" class="md-nav__link md-nav__link--active">
+      Features
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mta-mail-transfer-agent-postfix" title="MTA (Mail Transfer Agent ) - POSTFIX" class="md-nav__link">
+    MTA (Mail Transfer Agent ) - POSTFIX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mda-mail-delevery-agent-dovecot" title="MDA (Mail Delevery Agent) - DOVECOT" class="md-nav__link">
+    MDA (Mail Delevery Agent) - DOVECOT
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dovecot-advantages" title="Dovecot Advantages" class="md-nav__link">
+    Dovecot Advantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spam-filter-rspamd" title="SPAM FILTER - RSPAMD" class="md-nav__link">
+    SPAM FILTER - RSPAMD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lua-modules" title="Lua modules" class="md-nav__link">
+    Lua modules
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spf-sender-policy-framework" title="SPF - Sender Policy Framework" class="md-nav__link">
+    SPF - Sender Policy Framework
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-an-spf-record-for-your-domain" title="Create an SPF record for your domain" class="md-nav__link">
+    Create an SPF record for your domain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dkim-domainkeys-identified-mail" title="DKIM - DomainKeys Identified Mail" class="md-nav__link">
+    DKIM - DomainKeys Identified Mail
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dmark-domain-based-message-authentication-reporting-conformance" title="DMARK - Domain-based Message Authentication, Reporting &amp; Conformance" class="md-nav__link">
+    DMARK - Domain-based Message Authentication, Reporting &amp; Conformance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openldap-" title="OPENLDAP -" class="md-nav__link">
+    OPENLDAP -
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phpldapadmin" title="PHPLDAPADMIN" class="md-nav__link">
+    PHPLDAPADMIN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groupoffice" title="GroupOffice" class="md-nav__link">
+    GroupOffice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" title="DOCKER" class="md-nav__link">
+    DOCKER
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes" title="Kubernetes" class="md-nav__link">
+    Kubernetes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Prerequisites/" title="Prerequisites" class="md-nav__link">
+      Prerequisites
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Configuration/" title="Initial Configuration" class="md-nav__link">
+      Initial Configuration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../CConfiguration/" title="Client Configuration" class="md-nav__link">
+      Client Configuration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../userfeature/" title="Groupware Features" class="md-nav__link">
+      Groupware Features
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Backups/" title="Backup & Restoration" class="md-nav__link">
+      Backup & Restoration
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshoot/" title="Troubleshoot" class="md-nav__link">
+      Troubleshoot
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Hub/" title="Central Supervision" class="md-nav__link">
+      Central Supervision
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../issues/" title="Email security" class="md-nav__link">
+      Email security
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mta-mail-transfer-agent-postfix" title="MTA (Mail Transfer Agent ) - POSTFIX" class="md-nav__link">
+    MTA (Mail Transfer Agent ) - POSTFIX
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mda-mail-delevery-agent-dovecot" title="MDA (Mail Delevery Agent) - DOVECOT" class="md-nav__link">
+    MDA (Mail Delevery Agent) - DOVECOT
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dovecot-advantages" title="Dovecot Advantages" class="md-nav__link">
+    Dovecot Advantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spam-filter-rspamd" title="SPAM FILTER - RSPAMD" class="md-nav__link">
+    SPAM FILTER - RSPAMD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lua-modules" title="Lua modules" class="md-nav__link">
+    Lua modules
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spf-sender-policy-framework" title="SPF - Sender Policy Framework" class="md-nav__link">
+    SPF - Sender Policy Framework
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-an-spf-record-for-your-domain" title="Create an SPF record for your domain" class="md-nav__link">
+    Create an SPF record for your domain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dkim-domainkeys-identified-mail" title="DKIM - DomainKeys Identified Mail" class="md-nav__link">
+    DKIM - DomainKeys Identified Mail
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dmark-domain-based-message-authentication-reporting-conformance" title="DMARK - Domain-based Message Authentication, Reporting &amp; Conformance" class="md-nav__link">
+    DMARK - Domain-based Message Authentication, Reporting &amp; Conformance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openldap-" title="OPENLDAP -" class="md-nav__link">
+    OPENLDAP -
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phpldapadmin" title="PHPLDAPADMIN" class="md-nav__link">
+    PHPLDAPADMIN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groupoffice" title="GroupOffice" class="md-nav__link">
+    GroupOffice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" title="DOCKER" class="md-nav__link">
+    DOCKER
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes" title="Kubernetes" class="md-nav__link">
+    Kubernetes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/LSFLK/Copper/edit/master/docs/Features.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h1>
+<p><p align="justify">
+Copper Email Solution has been integrated many industry leading applicaitons to ensure most featurefull and secured email solution is delevered. Knowing each tool it was used will be good approach to know the solution well.
+</p></p>
+<h2 id="mta-mail-transfer-agent-postfix">MTA (Mail Transfer Agent ) - POSTFIX<a class="headerlink" href="#mta-mail-transfer-agent-postfix" title="Permanent link">&para;</a></h2>
+<p><p align="justify">
+Postfix has been selected as the MTA in copper solution due to some of following advantages we found in postfix. To allow the server to send external emails, an MTA such as Sendmail, Postfix, or Exim is required. Mail is read either through direct access (shell login) or mailbox protocols like POP and IMAP. 
+Postfix If you compare mail servers, then Postfix should be included, too, because it is also a popular mail server. It is a better mail server because it supports most of the current innovations in a modern-day mail server including but not limited to: • Virtual domains • SMTP relay • Consultation of SMTP client on its whitelist, grey list and blacklist databases • Host and user masquerading • Delivery to mailboxes with Maildir format As you compare mail servers, you will observe that Postfix utilises two large monolithic configuration files instead of the multiple task-oriented configuration files. You will then have to learn a single set of configuration file keywords. So we selected postfix considering It's popularity in integration projects and adaptability with new featues too.
+</p></p>
+<p>Simple SMTP server.<a href="http://www.postfix.org">POSTFIX</a>.</p>
+<h2 id="mda-mail-delevery-agent-dovecot">MDA (Mail Delevery Agent) - DOVECOT<a class="headerlink" href="#mda-mail-delevery-agent-dovecot" title="Permanent link">&para;</a></h2>
+<p align="justify">
+Dovecot is an open source IMAP and POP3 email server for Linux/UNIX-like systems, written with security primarily in mind. Dovecot is an excellent choice for both small and large installations. It's fast, simple to set up, requires no special administration and it uses very little memory.
+</p>
+
+<h3 id="dovecot-advantages">Dovecot Advantages<a class="headerlink" href="#dovecot-advantages" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Best performing</li>
+<li>Standards compliant</li>
+<li>Clustered filesystems compatibilty</li>
+<li>Flexible authentification</li>
+<li>postfix and exim supprt for smtp authentication</li>
+<li>Security</li>
+</ol>
+<p>Flexible IMAP server.<a href="https://www.dovecot.org">DOVECOT</a>.</p>
+<h2 id="spam-filter-rspamd">SPAM FILTER - RSPAMD<a class="headerlink" href="#spam-filter-rspamd" title="Permanent link">&para;</a></h2>
+<p align="justify">
+Rspamd is an advanced spam filtering system that allows evaluation of messages by a number of rules including regular expressions, statistical analysis and custom services such as URL black lists. Each message is analysed by Rspamd and given a spam score.
+
+According to this spam score and the user’s settings, Rspamd recommends an action for the MTA to apply to the message, for example, to pass, reject or add a header. Rspamd is designed to process hundreds of messages per second simultaneously, and provides a number of useful features.
+</p>
+
+<p>Here is the list of C modules available bundled with rspamd.</p>
+<ol>
+<li>chartable: checks character sets of text parts in messages.</li>
+<li>dkim: performs DKIM signatures checks.</li>
+<li>fuzzy_check: checks messages fuzzy hashes against public blacklists.</li>
+<li>spf: checks SPF records for messages processed.</li>
+<li>surbl: this module extracts URLs from messages and check them against public DNS black lists to filter messages with malicious URLs.</li>
+<li>regexp: the core module that allow to define regexp rules, rspamd internal functions and lua rules.</li>
+</ol>
+<h3 id="lua-modules">Lua modules<a class="headerlink" href="#lua-modules" title="Permanent link">&para;</a></h3>
+<p>Lua modules are dynamically loaded on rspamd startup and are reloaded on rspamd reconfiguration. Should you want to write a lua module consult with the Lua API documentation. To define path to lua modules there is a special section named modules in rspamd:</p>
+<div class="codehilite"><pre><span></span>modules {
+    path = &quot;/path/to/dir/&quot;;
+    path = &quot;/path/to/module.lua&quot;;
+    path = &quot;$PLUGINSDIR/lua&quot;;
+}
+</pre></div>
+
+
+<p>If a path is a directory then rspamd scans it for `*.lua” pattern and load all files matched.</p>
+<p>The following Lua modules are enabled in the default configuration (but may require additional configuration to work, see notes below):</p>
+<ol>
+<li>antivirus - integrates virus scanners (requires configuration)</li>
+<li>arc - checks and signs ARC signatures</li>
+<li>asn - looks up ASN-related information
+etc <strong>*</strong>*</li>
+</ol>
+<p>Fast, free and open-source spam filtering.<a href="https://rspamd.com">RSPAMD</a></p>
+<p>Comparisson with other spam filters. <a href="https://rspamd.com/comparison.html">SPAM FILTERS</a></p>
+<h2 id="spf-sender-policy-framework">SPF - Sender Policy Framework<a class="headerlink" href="#spf-sender-policy-framework" title="Permanent link">&para;</a></h2>
+<p align="justify">
+Sender Policy Framework (SPF) is an email authentication method designed to detect forged sender addresses in emails (email spoofing), a technique often used in phishing and email spam.
+
+SPF allows the receiver to check that an email claiming to come from a specific domain comes from an IP address authorized by that domain's administrators. The list of authorized sending hosts and IP addresses for a domain is published in the DNS records for that domain. 
+</p>
+
+<ol>
+<li>Authorize email senders with SPF</li>
+<li>Help prevent spoofing from your domain</li>
+</ol>
+<p>Set up SPF to prevent spammers from sending unauthorized emails from your domain. This type of spamming is called spoofing. Sender Policy Framework (SPF) is an email security method to prevent spoofing from your domain. </p>
+<p>Spoofing is a common unauthorized use of email, so some email servers require SPF. If you don't set up SPF for your domain, messages could bounce or could be marked as spam.
+Use SPF with DKIM and DMARC</p>
+<p>Along with SPF,  we recommend setting up DomainKeys Identified Mail (DKIM) and Domain-based Message Authentication, Reporting &amp; Conformance (DMARC). SPF validates the domains that can send messages. DKIM verifies that message content is authentic and not changed. DMARC specifies how your domain handles suspicious emails that it gets.</p>
+</p>
+
+<h3 id="create-an-spf-record-for-your-domain">Create an SPF record for your domain<a class="headerlink" href="#create-an-spf-record-for-your-domain" title="Permanent link">&para;</a></h3>
+<p align="justify">
+An SPF record is a TXT record that lists the mail servers that are allowed to send email from your domain. Messages sent from a server that isn't the SPF record might be marked as spam. SPF originally used TXT records in DNS, which are supposed to be free-form text with no semantics attached. SPF proponents readily acknowledge that it would be better to have records specifically designated for SPF, but this choice was made to enable rapid implementation of SPF. In July 2005, IANA assigned the Resource Record type 99 to SPF. Later on, the use of SPF records was discontinued, and as of 2017, it is still necessary to use TXT records.
+
+</p>
+
+<p>Fast, free and open-source spam filtering.<a href="https://en.wikipedia.org/wiki/Sender_Policy_Framework">SPF</a></p>
+<p>Create TXT Record in DNS for SPF . <a href="https://mediatemple.net/community/products/dv/204404314/how-can-i-create-an-spf-record-for-my-domain">TXT Record Creation</a></p>
+<h2 id="dkim-domainkeys-identified-mail">DKIM - DomainKeys Identified Mail<a class="headerlink" href="#dkim-domainkeys-identified-mail" title="Permanent link">&para;</a></h2>
+<p align="justify">
+DomainKeys Identified Mail (DKIM) lets an organization take responsibility for a message that is in transit.  The organization is a handler of the message, either as its originator or as an intermediary. Their reputation is the basis for evaluating whether to trust the message for further handling, such as delivery. Technically DKIM provides a method for validating a domain name identity that is associated with a message through cryptographic authentication. 
+DKIM allows the receiver to check that an email claimed to have come from a specific domain was indeed authorized by the owner of that domain. It achieves this by affixing a digital signature, linked to a domain name, to each outgoing email message. The recipient system can verify this by looking up the sender's public key published in the DNS. A valid signature also guarantees that some parts of the email (possibly including attachments) have not been modified since the signature was affixed. Usually, DKIM signatures are not visible to end-users, and are affixed or verified by the infrastructure rather than the message's authors and recipients. 
+</p>
+
+<p>DomainKeys Identified Mail .<a href="http://dkim.org/">DKIM</a>
+DKIM technical specification. <a href="https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail">DKIM SPECIFICATION</a></p>
+<h2 id="dmark-domain-based-message-authentication-reporting-conformance">DMARK - Domain-based Message Authentication, Reporting &amp; Conformance<a class="headerlink" href="#dmark-domain-based-message-authentication-reporting-conformance" title="Permanent link">&para;</a></h2>
+<p align="justify">
+DMARC, which stands for “Domain-based Message Authentication, Reporting & Conformance”, is an email authentication, policy, and reporting protocol. It builds on the widely deployed SPF and DKIM protocols, adding linkage to the author (“From:”) domain name, published policies for recipient handling of authentication failures, and reporting from receivers to senders, to improve and monitor protection of the domain from fraudulent email.
+DMARC is designed to fit into an organization’s existing inbound email authentication process. The way it works is to help email receivers determine if the purported message “aligns” with what the receiver knows about the sender. If not, DMARC includes guidance on how to handle the “non-aligned” messages. For example, assuming that a receiver deploys SPF and DKIM, plus its own spam filters, the flow may look something like this:
+</p>
+
+<p><img alt="DMARK Integration" src="../images/features/dmark.png" /></p>
+<p>Domain-based Message Authentication, Reporting &amp; Conformance .<a href="https://dmarc.org">DMARK</a></p>
+<h2 id="openldap-">OPENLDAP -<a class="headerlink" href="#openldap-" title="Permanent link">&para;</a></h2>
+<p align="justify">
+Openldap is used as the userbase and email server domain configuration management portal.
+OpenLDAP is a free, open-source implementation of the Lightweight Directory Access Protocol (LDAP) developed by the OpenLDAP Project. It is released under its own BSD-style license called the OpenLDAP Public License.
+LDAP is a platform-independent protocol. Several common Linux distributions include OpenLDAP Software for LDAP support. The software also runs on BSD-variants, as well as AIX, Android, HP-UX, macOS, Solaris, Microsoft Windows (NT and derivatives, e.g. 2000, XP, Vista, Windows 7, etc.), and z/OS. 
+</p>
+
+<p>OpenLDAP has three main components:</p>
+<div class="codehilite"><pre><span></span>slapd – stand-alone LDAP daemon and associated modules and tools
+libraries implementing the LDAP protocol and ASN.1 Basic Encoding Rules (BER)
+client software: ldapsearch, ldapadd, ldapdelete, and others
+</pre></div>
+
+
+<p>Opensource LDAP server .<a href="https://www.openldap.org/">OPENLDAP</a></p>
+<h2 id="phpldapadmin">PHPLDAPADMIN<a class="headerlink" href="#phpldapadmin" title="Permanent link">&para;</a></h2>
+<p align="justify">
+PhpLdapAdmin is ued to mange the openldap server. It is simple and easy tool to mange openldap server.
+phpLDAPadmin (also known as PLA) is a web-based LDAP client. It provides easy, anywhere-accessible, multi-language administration for your LDAP server.
+
+Its hierarchical tree-viewer and advanced search functionality make it intuitive to browse and administer your LDAP directory. Since it is a web application, this LDAP browser works on many platforms, making your LDAP server easily manageable from any location.
+
+phpLDAPadmin is the perfect LDAP browser for the LDAP professional and novice alike. Its user base consists mostly of LDAP administration professionals.
+You might also like to see About. 
+</p>
+
+<p>ldap adminsistration .<a href="http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page">PHPLDAPADMIN</a></p>
+<h2 id="groupoffice">GroupOffice<a class="headerlink" href="#groupoffice" title="Permanent link">&para;</a></h2>
+<p align="justify">
+Group-Office is an enterprise CRM and groupware tool. Share projects, calendars, files and e-mail online with co-workers and clients. Easy to use and fully customizable. Its interfacea are userfriendly too. Copperoffice has used this CRM for its inbult webclient and for other groupware tools.
+</p>
+
+<p>It includes following features.</p>
+<ul>
+<li>Email Web client</li>
+<li>Calendar </li>
+<li>Address Book</li>
+<li>File sharing</li>
+<li>Tasks</li>
+<li>Notes</li>
+<li>NewsLetters</li>
+</ul>
+<p>GroupOffice CRM .<a href="https://www.group-office.com">GROUPOFFICE</a></p>
+<h2 id="docker">DOCKER<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
+<p align="justify">
+Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.
+In a way, Docker is a bit like a virtual machine. But unlike a virtual machine, rather than creating a whole virtual operating system, Docker allows applications to use the same Linux kernel as the system that they're running on and only requires applications be shipped with things not already running on the host computer. This gives a significant performance boost and reduces the size of the application.
+For copper email system also use docker due to it's toola are written in many languages and may wanted specific operating systems. Furthe system deployment is far more easy with docker. Copper has created their own images and hosted in docker.hub which may be pull from the hub when the system is deployed in user environments.
+</p>
+
+<p>Why docker .<a href="https://opensource.com/resources/what-docker">DOCKER</a></p>
+<h2 id="kubernetes">Kubernetes<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h2>
+<p align="justify">
+Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation (CNCF). Copper uses kubernetes for the system orchestration due to number of advantages available with the wolds leading orchestration platform.
+</p>
+
+<p>Kubernetes has a number of features. It can be thought of as:</p>
+<div class="codehilite"><pre><span></span>a container platform
+a microservices platform
+a portable cloud platform and a lot more.
+</pre></div>
+
+
+<p>Kubernetes provides a container-centric management environment. It orchestrates computing, networking, and storage infrastructure on behalf of user workloads. This provides much of the simplicity of Platform as a Service (PaaS) with the flexibility of Infrastructure as a Service (IaaS), and enables portability across infrastructure providers.
+How Kubernetes is a platform</p>
+<p>Kuubernetes .<a href="https://kubernetes.io/docs/home/">DOCKER</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Prerequisites/" title="Prerequisites" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Prerequisites
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2019 Lanka Software Foundation
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.267712eb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
