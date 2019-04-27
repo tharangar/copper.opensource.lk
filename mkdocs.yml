@@ -9,7 +9,7 @@ repo_url: 'https://github.com/LSFLK/Copper'
 copyright: 'Copyright &copy; 2018 - 2019 Lanka Software Foundation'
 
 theme:
-  name: 'material'
+  name: 'mkdocs'
   palette:
     primary: 'amber'
     accent: 'amber'
