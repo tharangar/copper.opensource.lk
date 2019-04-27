@@ -28,4 +28,29 @@ In 2019 March it's beata versions was released. It has tested in many cloud plat
 
 Copper main repository is it's github repository.
 
-For Github repository visit [copper.github](https://github.com/LSFLK/Copper).
+1. For Github repository visit [copper.github](https://github.com/LSFLK/Copper).
+
+2. Email solution initiated by Prabod Rathnayaka. url :   
+  https://github.com/prabod/email-solution/tree/master/docker
+
+3. mail solution with rspamd
+  https://github.com/tomav
+  
+4. openLdap solutions
+  https://github.com/osixia/docker-openldap#quick-start
+
+5. Group office
+  https://www.group-office.com/
+
+<!-- Prometheus container pull and run: 
+    sudo docker pull prom/prometheus
+    docker run -p 9090:9090 prom/prometheus
+
+Grafana pull and run
+    docker pull grafana/grafana
+    docker run -d --name=grafana -p 3000:3000 grafana/grafana -->
+
+
+## Contact us
+    
+ If you have any questions or doubts about Cu, please reach us via copper@opensource.lk

@@ -17,8 +17,9 @@ nav:
     - Client Configuration: CConfiguration.md
     - Groupware Features: userfeature.md
     - Backup & Restoration: Backups.md
-    - Centralized Management: Hub.md
-    - Email Security: Security.md
+    - Troubleshoot: troubleshoot.md
+    - Central Supervision: Hub.md
+    - Email security: issues.md
     
 theme:
   name: 'material'

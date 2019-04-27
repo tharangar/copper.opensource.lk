@@ -16,7 +16,7 @@ Simple SMTP server.[POSTFIX](http://www.postfix.org).
 <p align="justify">
 Dovecot is an open source IMAP and POP3 email server for Linux/UNIX-like systems, written with security primarily in mind. Dovecot is an excellent choice for both small and large installations. It's fast, simple to set up, requires no special administration and it uses very little memory.
 </p>
-
+### Dovecot Advantages
 1. Best performing
 2. Standards compliant
 3. Clustered filesystems compatibilty
@@ -43,7 +43,7 @@ Here is the list of C modules available bundled with rspamd.
 5. surbl: this module extracts URLs from messages and check them against public DNS black lists to filter messages with malicious URLs.
 6. regexp: the core module that allow to define regexp rules, rspamd internal functions and lua rules.
 
-Lua modules
+### Lua modules
 
 Lua modules are dynamically loaded on rspamd startup and are reloaded on rspamd reconfiguration. Should you want to write a lua module consult with the Lua API documentation. To define path to lua modules there is a special section named modules in rspamd:
 
@@ -71,7 +71,7 @@ Comparisson with other spam filters. [SPAM FILTERS](https://rspamd.com/compariso
 <p align="justify">
 Sender Policy Framework (SPF) is an email authentication method designed to detect forged sender addresses in emails (email spoofing), a technique often used in phishing and email spam.
 
-SPF allows the receiver to check that an email claiming to come from a specific domain comes from an IP address authorized by that domain's administrators.[1] The list of authorized sending hosts and IP addresses for a domain is published in the DNS records for that domain. 
+SPF allows the receiver to check that an email claiming to come from a specific domain comes from an IP address authorized by that domain's administrators. The list of authorized sending hosts and IP addresses for a domain is published in the DNS records for that domain. 
 </p>
 
 1. Authorize email senders with SPF
@@ -97,3 +97,101 @@ An SPF record is a TXT record that lists the mail servers that are allowed to se
 Fast, free and open-source spam filtering.[SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework)
 
 Create TXT Record in DNS for SPF . [TXT Record Creation](https://mediatemple.net/community/products/dv/204404314/how-can-i-create-an-spf-record-for-my-domain)
+
+
+## DKIM - DomainKeys Identified Mail 
+
+<p align="justify">
+DomainKeys Identified Mail (DKIM) lets an organization take responsibility for a message that is in transit.  The organization is a handler of the message, either as its originator or as an intermediary. Their reputation is the basis for evaluating whether to trust the message for further handling, such as delivery. Technically DKIM provides a method for validating a domain name identity that is associated with a message through cryptographic authentication. 
+DKIM allows the receiver to check that an email claimed to have come from a specific domain was indeed authorized by the owner of that domain. It achieves this by affixing a digital signature, linked to a domain name, to each outgoing email message. The recipient system can verify this by looking up the sender's public key published in the DNS. A valid signature also guarantees that some parts of the email (possibly including attachments) have not been modified since the signature was affixed. Usually, DKIM signatures are not visible to end-users, and are affixed or verified by the infrastructure rather than the message's authors and recipients. 
+</p>
+
+DomainKeys Identified Mail .[DKIM](http://dkim.org/)
+DKIM technical specification. [DKIM SPECIFICATION](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
+
+
+## DMARK - Domain-based Message Authentication, Reporting & Conformance
+
+<p align="justify">
+DMARC, which stands for “Domain-based Message Authentication, Reporting & Conformance”, is an email authentication, policy, and reporting protocol. It builds on the widely deployed SPF and DKIM protocols, adding linkage to the author (“From:”) domain name, published policies for recipient handling of authentication failures, and reporting from receivers to senders, to improve and monitor protection of the domain from fraudulent email.
+DMARC is designed to fit into an organization’s existing inbound email authentication process. The way it works is to help email receivers determine if the purported message “aligns” with what the receiver knows about the sender. If not, DMARC includes guidance on how to handle the “non-aligned” messages. For example, assuming that a receiver deploys SPF and DKIM, plus its own spam filters, the flow may look something like this:
+</p>
+
+ ![DMARK Integration](../images/features/dmark.png)
+
+Domain-based Message Authentication, Reporting & Conformance .[DMARK](https://dmarc.org)
+
+## OPENLDAP - 
+
+<p align="justify">
+Openldap is used as the userbase and email server domain configuration management portal.
+OpenLDAP is a free, open-source implementation of the Lightweight Directory Access Protocol (LDAP) developed by the OpenLDAP Project. It is released under its own BSD-style license called the OpenLDAP Public License.
+LDAP is a platform-independent protocol. Several common Linux distributions include OpenLDAP Software for LDAP support. The software also runs on BSD-variants, as well as AIX, Android, HP-UX, macOS, Solaris, Microsoft Windows (NT and derivatives, e.g. 2000, XP, Vista, Windows 7, etc.), and z/OS. 
+</p>
+OpenLDAP has three main components:
+
+    slapd – stand-alone LDAP daemon and associated modules and tools
+    libraries implementing the LDAP protocol and ASN.1 Basic Encoding Rules (BER)
+    client software: ldapsearch, ldapadd, ldapdelete, and others
+
+Opensource LDAP server .[OPENLDAP](https://www.openldap.org/)
+
+## PHPLDAPADMIN
+
+<p align="justify">
+PhpLdapAdmin is ued to mange the openldap server. It is simple and easy tool to mange openldap server.
+phpLDAPadmin (also known as PLA) is a web-based LDAP client. It provides easy, anywhere-accessible, multi-language administration for your LDAP server.
+
+Its hierarchical tree-viewer and advanced search functionality make it intuitive to browse and administer your LDAP directory. Since it is a web application, this LDAP browser works on many platforms, making your LDAP server easily manageable from any location.
+
+phpLDAPadmin is the perfect LDAP browser for the LDAP professional and novice alike. Its user base consists mostly of LDAP administration professionals.
+You might also like to see About. 
+</p>
+
+ldap adminsistration .[PHPLDAPADMIN](http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page)
+
+## GroupOffice 
+
+<p align="justify">
+Group-Office is an enterprise CRM and groupware tool. Share projects, calendars, files and e-mail online with co-workers and clients. Easy to use and fully customizable. Its interfacea are userfriendly too. Copperoffice has used this CRM for its inbult webclient and for other groupware tools.
+</p>
+
+It includes following features.
+
+*   Email Web client
+*   Calendar 
+*   Address Book
+*   File sharing
+*   Tasks
+*   Notes
+*   NewsLetters
+
+GroupOffice CRM .[GROUPOFFICE](https://www.group-office.com)
+
+
+## DOCKER
+
+<p align="justify">
+Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.
+In a way, Docker is a bit like a virtual machine. But unlike a virtual machine, rather than creating a whole virtual operating system, Docker allows applications to use the same Linux kernel as the system that they're running on and only requires applications be shipped with things not already running on the host computer. This gives a significant performance boost and reduces the size of the application.
+For copper email system also use docker due to it's toola are written in many languages and may wanted specific operating systems. Furthe system deployment is far more easy with docker. Copper has created their own images and hosted in docker.hub which may be pull from the hub when the system is deployed in user environments.
+</p>
+
+Why docker .[DOCKER](https://opensource.com/resources/what-docker)
+
+
+## Kubernetes
+
+<p align="justify">
+Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation (CNCF). Copper uses kubernetes for the system orchestration due to number of advantages available with the wolds leading orchestration platform.
+</p>
+Kubernetes has a number of features. It can be thought of as:
+
+    a container platform
+    a microservices platform
+    a portable cloud platform and a lot more.
+
+Kubernetes provides a container-centric management environment. It orchestrates computing, networking, and storage infrastructure on behalf of user workloads. This provides much of the simplicity of Platform as a Service (PaaS) with the flexibility of Infrastructure as a Service (IaaS), and enables portability across infrastructure providers.
+How Kubernetes is a platform
+
+Kuubernetes .[DOCKER](https://kubernetes.io/docs/home/)
