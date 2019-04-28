@@ -61,6 +61,10 @@ $ sh deploy.sh
 
     Ex : spam
 
+Ex : Image of running deply.sh
+
+![Check copper pods](../images/installation/install.png)
+
 ## Check kubernetes pods.
 
 <p align="justify">
@@ -86,3 +90,14 @@ $kubectl get services -n copper
 ![Check copper services](../images/installation/services.png)
 
  
+ ## Check kubernetes services.
+
+<p align="justify">
+Some time it is required to uninstall the system. For that there is a shell script uninstall.sh 
+</p>
+
+    $ sh undeploy.sh
+
+Ex : Image of running undeploy.sh
+
+![Uninstallation](../images/installation/uninstall.png)
