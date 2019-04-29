@@ -12,17 +12,7 @@ Copper Email System is the solution developed by Lanka Software Foundation for t
 <p align="justify">
 Lanka Software Foundation (LSF) was established in 2003 as a company limited by guarantee and as “not for profit” organization with the vision of positioning Sri Lanka as a “global Free and Open Source (FOSS) Research & Development hub”.
 </p>
-## History
 
-Copper Project stated in 2018 with the expectionation of following goals.
-
-1. Easy Deoployable Email server.
-2. Security is the first piority.
-3. High user friendlyness.
-4. Groupware featues like notes, meetings, and notes.
-5. Free and opensource.
-
-In 2019 March it's beata versions was released. It has tested in many cloud platforms like AWS and bare metal servers too.
 
 ## Refferences
 
@@ -30,17 +20,16 @@ Copper main repository is it's github repository.
 
 1. For Github repository visit [copper.github](https://github.com/LSFLK/Copper).
 
-2. Email solution initiated by Prabod Rathnayaka. url :   
-  https://github.com/prabod/email-solution/tree/master/docker
+2. Open source email solutions like :[emailserver](https://github.com/prabod/email-solution/tree/master/docker)
 
-3. mail solution with rspamd
-  https://github.com/tomav
+3. Mail solution with rspamd [Tomav](https://github.com/tomav)
   
-4. openLdap solutions
-  https://github.com/osixia/docker-openldap#quick-start
+  
+4. openLdap solutions [RSPAMD](https://github.com/osixia/docker-openldap#quick-start)
+  
 
-5. Group office
-  https://www.group-office.com/
+5. Group office Groupware[GroupOffice](https://www.group-office.com/)
+  
 
 <!-- Prometheus container pull and run: 
     sudo docker pull prom/prometheus
@@ -53,4 +42,5 @@ Grafana pull and run
 
 ## Contact us
     
- If you have any questions or doubts about Cu, please reach us via copper@opensource.lk
+If you have any questions or doubts about Cu, please reach us via 
+You can [contact us](mailto:copper@opensource.lk)
