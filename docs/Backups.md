@@ -3,7 +3,10 @@
 
 
 <p align="justify">
-Backups and restoration is requied to ensure bussiness continuty in any corporate environment. Copper Email solution is bit complex so it has varity of data sources to be backed up. Even though backing up is automated there is a possibility to manually run the backup process too. Further restoraion is also can be done using latest backups from a shell coammand.
+Backups and restoration is requied to ensure bussiness continuty in any corporate environment. Copper Email solution is bit complex so it has varity of data sources to be backed up. 
+Still this backup and restoration part is not completed, this is the initila plan and hope to complete backup with suitable backup management system with encription .
+
+Even though backing up is automated there should be a possibility to manually run the backup process too. Further restoraion is also should be done using latest backups from a shell coammand.
 
 </p>
 

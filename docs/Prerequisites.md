@@ -39,9 +39,9 @@ Unblock following ports
 Then check external firewall also .
 
 
-## Check Docker version
+## Docker
 
-It is must to have docker installed in your host machine. So first check whether docker is already available.
+It is must to have docker installed in your host machine. So first check whether docker is already available and docker version should be version 18.0 or greater.
 
 ``` 
 docker -v
@@ -49,7 +49,7 @@ docker -v
 
 If docker has not already installed then it must be installed. 
 
-## Docker Installation
+### Docker Installation
 [Docker installation](https://www.linux.com/learn/intro-to-linux/2017/11/how-install-and-use-docker-linux)
 
 <p align="justify">
@@ -113,13 +113,17 @@ Should you need to stop or restart the Docker daemon, the commands are:
 
 Docker is now ready to deploy containers.
 
-## Check kubernetes version
+## Kubernetes
+
+To deploy copper email solution we should have kubernetes version greater than  1.10 .
+
+### Check kubernetes version
 
 ``` kubectl version```
 
 Now your system is ready for copper installation.
 
-## kubernetes Installation
+### kubernetes Installation
 
 [Install kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 

@@ -409,3 +409,22 @@ If you want to troubleshoot whole TLS communication with ldap server step by ste
 
     ldapsearch -x -ZZ -d1
 
+
+## Database Testing
+
+    Now a groupoffice database should be created preor to start groupoffice installation begins.
+
+    first you have to check what is the pod name of dataase.
+
+    #kubectl get pods -n  monitoring
+
+    Then exicute followng command to open a mysql client connected with the mysql pod.
+
+    #kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -n monitoring -- mysql -h mysql -pc0pperDB
+
+    Then you will get access to the mysql database.
+    Once you connected check databae.
+
+        SHOW DATABASES;
+        USE copper;
+        SHOW TABLES;

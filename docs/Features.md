@@ -194,4 +194,4 @@ Kubernetes has a number of features. It can be thought of as:
 Kubernetes provides a container-centric management environment. It orchestrates computing, networking, and storage infrastructure on behalf of user workloads. This provides much of the simplicity of Platform as a Service (PaaS) with the flexibility of Infrastructure as a Service (IaaS), and enables portability across infrastructure providers.
 How Kubernetes is a platform
 
-Kuubernetes .[DOCKER](https://kubernetes.io/docs/home/)
+Kuubernetes .[KUBERNETES](https://kubernetes.io/docs/home/)
