@@ -308,9 +308,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-docker-version" title="Check Docker version" class="md-nav__link">
-    Check Docker version
+  <a href="#docker" title="Docker" class="md-nav__link">
+    Docker
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-installation" title="Docker Installation" class="md-nav__link">
+    Docker Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes" title="Kubernetes" class="md-nav__link">
+    Kubernetes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-kubernetes-version" title="Check kubernetes version" class="md-nav__link">
+    Check kubernetes version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes-installation" title="kubernetes Installation" class="md-nav__link">
+    kubernetes Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -456,9 +496,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-docker-version" title="Check Docker version" class="md-nav__link">
-    Check Docker version
+  <a href="#docker" title="Docker" class="md-nav__link">
+    Docker
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-installation" title="Docker Installation" class="md-nav__link">
+    Docker Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes" title="Kubernetes" class="md-nav__link">
+    Kubernetes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-kubernetes-version" title="Check kubernetes version" class="md-nav__link">
+    Check kubernetes version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kubernetes-installation" title="kubernetes Installation" class="md-nav__link">
+    kubernetes Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -541,9 +621,75 @@ $ sudo lsof -i :25
 </tbody>
 </table>
 <p>Then check external firewall also .</p>
-<h2 id="check-docker-version">Check Docker version<a class="headerlink" href="#check-docker-version" title="Permanent link">&para;</a></h2>
-<p>It is must to have docker installed in your host machine.</p>
-<p>``` </p>
+<h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
+<p>It is must to have docker installed in your host machine. So first check whether docker is already available and docker version should be version 18.0 or greater.</p>
+<div class="codehilite"><pre><span></span>docker -v
+</pre></div>
+
+
+<p>If docker has not already installed then it must be installed. </p>
+<h3 id="docker-installation">Docker Installation<a class="headerlink" href="#docker-installation" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.linux.com/learn/intro-to-linux/2017/11/how-install-and-use-docker-linux">Docker installation</a></p>
+<p align="justify">
+Since Ubuntu Server 16.04 is sans GUI, the installation and usage of Docker will be handled entirely through the command line. Before you run the installation command, make sure to update apt and then run any necessary upgrades. Do note, if your server’s kernel upgrades, you’ll need to reboot the system. Thus, you might want to plan to do this during a time when a server reboot is acceptable.
+</p>
+
+<p>To update apt, issue the command:</p>
+<p><code>sudo apt update</code></p>
+<p>Once that completes, upgrade with the command:</p>
+<p><code>sudo apt upgrade</code></p>
+<p>If the kernel upgrades, you’ll want to reboot the server with the command:</p>
+<p><code>sudo reboot</code></p>
+<p>If the kernel doesn’t upgrade, you’re good to install Docker (without having to reboot). The Docker installation command is:</p>
+<p><code>sudo apt install docker.io</code></p>
+<p align="justify">
+If you’re using a different Linux distribution, and you attempt to install (using your distribution’s package manager of choice), only to find out docker.io isn’t available, the package you want to install is called docker. For instance, the installation on Fedora would be:
+</p>
+
+<p><code>sudo dnf install docker</code>
+<p align="justify">
+If your distribution of choice is CentOS 7, installing docker is best handled via an installation script. First update the platform with the command sudo yum check-update. Once that completes, issue the following command to download and run the necessary script:
+</p></p>
+<p><code>curl -fsSL https://get.docker.com/ | sh</code>
+<p align="justify">
+Out of the box, the docker command can only be run with admin privileges. Because of security issues, you won’t want to be working with Docker either from the root user or with the help of sudo. To get around this, you need to add your user to the docker group. This is done with the command:
+</p></p>
+<p><code>sudo usermod -a -G docker $USER</code>
+<p align="justify">
+Once you’ve taken care of that, log out and back in, and you should be good to go. That is, unless your platform is Fedora. When adding a user to the docker group to this distribution, you’ll find the group doesn’t exist. What do you do? You create it first. Here are the commands to take care of this:
+</p></p>
+<p><code>sudo groupadd docker &amp;&amp; sudo gpasswd -a ${USER} docker &amp;&amp; sudo systemctl restart docker</code></p>
+<p><code>newgrp docker</code></p>
+<p>Log out and log back in. You should be ready to use Docker.</p>
+<p>Starting, stopping, and enabling Docker</p>
+<p>Once installed, you will want to enable the Docker daemon at boot. To do this, issue the following two commands:</p>
+<p><code>sudo systemctl start docker</code></p>
+<p><code>sudo systemctl enable docker</code></p>
+<p>Should you need to stop or restart the Docker daemon, the commands are:</p>
+<p><code>sudo systemctl stop docker</code></p>
+<p><code>sudo systemctl restart docker</code></p>
+<p>Docker is now ready to deploy containers.</p>
+<h2 id="kubernetes">Kubernetes<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h2>
+<p>To deploy copper email solution we should have kubernetes version greater than  1.10 .</p>
+<h3 id="check-kubernetes-version">Check kubernetes version<a class="headerlink" href="#check-kubernetes-version" title="Permanent link">&para;</a></h3>
+<p><code>kubectl version</code></p>
+<p>Now your system is ready for copper installation.</p>
+<h3 id="kubernetes-installation">kubernetes Installation<a class="headerlink" href="#kubernetes-installation" title="Permanent link">&para;</a></h3>
+<p><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">Install kubernetes</a></p>
+<p>Install kubectl on Linux</p>
+<p>Install kubectl binary with curl on Linux</p>
+<p>Download the latest release with the command:</p>
+<p><code>curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl</code></p>
+<p align="justify">
+To download a specific version, replace the $(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt) portion of the command with the specific version.
+For example, to download version v1.14.0 on Linux, type:
+</p>
+
+<p><code>curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.14.0/bin/linux/amd64/kubectl</code></p>
+<p>Make the kubectl binary executable.</p>
+<p><code>chmod +x ./kubectl</code></p>
+<p>Move the binary in to your PATH.</p>
+<p><code>sudo mv ./kubectl /usr/local/bin/kubectl</code></p>
                 
                   
                 

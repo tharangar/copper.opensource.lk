@@ -594,6 +594,8 @@ password : readonlypassword
 </pre></div>
 
 
+<p>Importing ldap.ldif created while installation from phpldapadmin.</p>
+<p><img alt="PHPLDAPADMIN " src="../images/configuration/phpldap.png" /></p>
 <h2 id="testing-rspamd">Testing RSPAMD<a class="headerlink" href="#testing-rspamd" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>RSPAMD is the spam filtering service in this email solution.
 
@@ -603,6 +605,7 @@ URL :http://localhost:11334/
 </pre></div>
 
 
+<p><img alt="RSPAM interface " src="../images/configuration/rspam.png" /></p>
 <h2 id="configure-groupoffice">Configure groupoffice<a class="headerlink" href="#configure-groupoffice" title="Permanent link">&para;</a></h2>
 <p>URL :http://localhost:8004</p>
 <p>You will see the installation page of the groupoffice package.
@@ -628,7 +631,12 @@ It is must to follow bellow steps to make sure you have successfuly connected wi
 <li>
 <p>Clikc on "+" mark to add ldap connection provide following parameters.</p>
 </li>
+<li>
+<p>Then refresh the page and go to System setting -- &gt; Authentication tab</p>
+</li>
 </ol>
+<p>Interface of Authentication tab.</p>
+<p><img alt="Authentication" src="../images/configuration/ldap1.png" /></p>
 <h3 id="configure-ldap-server">Configure LDAP Server<a class="headerlink" href="#configure-ldap-server" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>Domains : Domain name configured for ldap server
 
@@ -657,6 +665,8 @@ groupDN : Ex : ou=groups,dc=copper,dc=test,dc=lk
 
 
 <p>Check on create email server for users</p>
+<p>These all configurations are in same interface.</p>
+<p><img alt="LDAP configuration in groupoffice " src="../images/configuration/ldap2.png" /></p>
 <h3 id="imap-server-configuration">IMAP server configuration<a class="headerlink" href="#imap-server-configuration" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>IMAP Host : email
 
@@ -684,9 +694,11 @@ Uncheck validate certificate
 <h3 id="users-adding-to-a-group">Users adding to a group<a class="headerlink" href="#users-adding-to-a-group" title="Permanent link">&para;</a></h3>
 <p>Finaly add the user to the Internal group</p>
 <p align="justify">
-Now groupoffice configuration is complete. Then you can can log using your email account to group office for your domain.
+Now groupoffice configuration is complete. Then you can can log using your email account to group office for your domain. 
 </p>
 
+<p>GroupOffice mail client.</p>
+<p><img alt="GroupOffice mail client" src="../images/configuration/mail.png" /></p>
 <h2 id="password-change-for-users">Password change for users.<a class="headerlink" href="#password-change-for-users" title="Permanent link">&para;</a></h2>
 <p align="justify">
 By default test users password is set to "coppermail@lsf" or when system admin set a password for specific users it will be known to administrator. So once a new user log in to the system after admin
@@ -696,6 +708,7 @@ use provide the usernmae , current password, new password and confirme new passw
 
 <p>https://localhost:4343/service/</p>
 <p>use provide the usernmae , current password, new password and confirme new password.</p>
+<p><img alt="User self password change" src="../images/configuration/password.png" /></p>
 <p>Thats it . Usre's account is users now.</p>
                 
                   

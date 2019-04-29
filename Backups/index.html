@@ -108,7 +108,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#welcome-to-mkdocs" tabindex="1" class="md-skip">
+      <a href="#backups" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -335,45 +335,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Backup & Restoration
-      </label>
-    
     <a href="./" title="Backup & Restoration" class="md-nav__link md-nav__link--active">
       Backup & Restoration
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" title="Project layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -431,29 +395,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" title="Project layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -467,21 +408,27 @@
                   <a href="https://github.com/LSFLK/Copper/edit/master/docs/Backups.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">&para;</a></h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</pre></div>
+                <h1 id="backups">Backups<a class="headerlink" href="#backups" title="Permanent link">&para;</a></h1>
+<p align="justify">
+Backups and restoration is requied to ensure bussiness continuty in any corporate environment. Copper Email solution is bit complex so it has varity of data sources to be backed up. 
+Still this backup and restoration part is not completed, this is the initila plan and hope to complete backup with suitable backup management system with encription .
+
+Even though backing up is automated there should be a possibility to manually run the backup process too. Further restoraion is also should be done using latest backups from a shell coammand.
+
+</p>
+
+<p>Copper system has 4 main data to make sure system is successfully backed up.</p>
+<ol>
+<li>secret.yaml </li>
+<li>tls folder which has key files</li>
+<li>data folder which has email maildir </li>
+<li>groupoffice database backup</li>
+</ol>
+<p align="justify">
+Above data will be backed up daily in a local repository and central repository which can be restored in any occation by system administrator from his local repository. This central repository will be handled by Hub. Initial deploy script will check whether there is secret.yaml and if it exits it will ask to deploy it and if not it will create new one with user inputs.
+After initial installation another script should run to populate groupoffice database backto the database, tls files and maildir back in place.
+
+</p>
                 
                   
                 
