@@ -22,10 +22,10 @@ nav:
     - Email security: issues.md
     
 theme:
-  name: 'mkdocs'
+  name: 'material'
   palette:
-    primary: 'red'
-    accent: 'red'
+    primary: 'amber'
+    accent: 'amber'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
@@ -40,5 +40,3 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
-
-
