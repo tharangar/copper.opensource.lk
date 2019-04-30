@@ -11,8 +11,8 @@ copyright: 'Copyright &copy; 2018 - 2019 Lanka Software Foundation'
 theme:
   name: 'mkdocs'
   palette:
-    primary: 'amber'
-    accent: 'amber'
+    primary: 'red'
+    accent: 'red'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
@@ -27,3 +27,5 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+
+

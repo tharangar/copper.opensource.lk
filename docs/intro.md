@@ -54,7 +54,6 @@ Additional labels  **alpha** | **beta** | **RC**
 </br>
 ## Instruction for deployment (summary)
 
-
 #### Create environment
 
 1. Clone the repository [Copper](https://github.com/LSFLK/Copper.git) and refer [this](https://github.com/LSFLK/Copper/blob/master/copper-server/README.md) document for install Copper.
