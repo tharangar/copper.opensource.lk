@@ -3,13 +3,26 @@
 Copper Email Solution has been integrated many industry leading applicaitons to ensure most featurefull and secured email solution is delevered. Knowing each tool it was used will be good approach to know the solution well.
 </p>
 
+### Architecture
+
+![Octocat](images/copperBase_mailServerArchitecture.png)
+
+#### Copper-server main components.
+
+- [Postfix](http://www.postfix.org/) : A modular mail transfer agent (MTA)
+- [Dovecot](https://www.dovecot.org/) : Secure open-source IMAP and POP3 server (MDA)
+- [ClamAV](https://www.clamav.net/) : Antivirus software
+- [Rspamd](https://rspamd.com/) : Spam filter
+- [Group-Office](https://www.group-office.com/) : Web client to access mail for users
+- [OpenLDAP](https://www.openldap.org/) : Directory service which authenticate users
+
 ## MTA (Mail Transfer Agent ) - POSTFIX 
 <p align="justify">
 Postfix has been selected as the MTA in copper solution due to some of following advantages we found in postfix. To allow the server to send external emails, an MTA such as Sendmail, Postfix, or Exim is required. Mail is read either through direct access (shell login) or mailbox protocols like POP and IMAP. 
 Postfix If you compare mail servers, then Postfix should be included, too, because it is also a popular mail server. It is a better mail server because it supports most of the current innovations in a modern-day mail server including but not limited to: • Virtual domains • SMTP relay • Consultation of SMTP client on its whitelist, grey list and blacklist databases • Host and user masquerading • Delivery to mailboxes with Maildir format As you compare mail servers, you will observe that Postfix utilises two large monolithic configuration files instead of the multiple task-oriented configuration files. You will then have to learn a single set of configuration file keywords. So we selected postfix considering It's popularity in integration projects and adaptability with new featues too.
 </p>
 
-Simple SMTP server.[POSTFIX](http://www.postfix.org).
+Simple SMTP server [Postfix](http://www.postfix.org).
 
 ## MDA (Mail Delevery Agent) - DOVECOT
 
@@ -24,7 +37,7 @@ Dovecot is an open source IMAP and POP3 email server for Linux/UNIX-like systems
 5. postfix and exim supprt for smtp authentication
 6. Security
 
- Flexible IMAP server.[DOVECOT](https://www.dovecot.org).
+Flexible IMAP server [Dovecot](https://www.dovecot.org).
 
 ## SPAM FILTER - RSPAMD
 
@@ -62,9 +75,9 @@ The following Lua modules are enabled in the default configuration (but may requ
 3. asn - looks up ASN-related information
 etc ******
 
-Fast, free and open-source spam filtering.[RSPAMD](https://rspamd.com)
+Fast, free and open-source spam filtering [Rspamd](https://rspamd.com)
 
-Comparisson with other spam filters. [SPAM FILTERS](https://rspamd.com/comparison.html)
+Comparisson with other [spam filters](https://rspamd.com/comparison.html)
 
 ## SPF - Sender Policy Framework 
 
@@ -94,9 +107,9 @@ An SPF record is a TXT record that lists the mail servers that are allowed to se
     
 </p>
 
-Fast, free and open-source spam filtering.[SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework)
+Fast, free and open-source spam filtering [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework)
 
-Create TXT Record in DNS for SPF . [TXT Record Creation](https://mediatemple.net/community/products/dv/204404314/how-can-i-create-an-spf-record-for-my-domain)
+Create TXT Record in DNS for SPF [TXT Record Creation](https://mediatemple.net/community/products/dv/204404314/how-can-i-create-an-spf-record-for-my-domain)
 
 
 ## DKIM - DomainKeys Identified Mail 
@@ -106,8 +119,9 @@ DomainKeys Identified Mail (DKIM) lets an organization take responsibility for a
 DKIM allows the receiver to check that an email claimed to have come from a specific domain was indeed authorized by the owner of that domain. It achieves this by affixing a digital signature, linked to a domain name, to each outgoing email message. The recipient system can verify this by looking up the sender's public key published in the DNS. A valid signature also guarantees that some parts of the email (possibly including attachments) have not been modified since the signature was affixed. Usually, DKIM signatures are not visible to end-users, and are affixed or verified by the infrastructure rather than the message's authors and recipients. 
 </p>
 
-DomainKeys Identified Mail .[DKIM](http://dkim.org/)
-DKIM technical specification. [DKIM SPECIFICATION](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
+DomainKeys Identified Mail - [DKIM](http://dkim.org/)
+
+DKIM technical specification - [DKIM SPECIFICATION](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
 
 
 ## DMARK - Domain-based Message Authentication, Reporting & Conformance
@@ -117,9 +131,9 @@ DMARC, which stands for “Domain-based Message Authentication, Reporting & Conf
 DMARC is designed to fit into an organization’s existing inbound email authentication process. The way it works is to help email receivers determine if the purported message “aligns” with what the receiver knows about the sender. If not, DMARC includes guidance on how to handle the “non-aligned” messages. For example, assuming that a receiver deploys SPF and DKIM, plus its own spam filters, the flow may look something like this:
 </p>
 
- ![DMARK Integration](../images/features/dmark.png)
+![DMARK Integration](../images/features/dmark.png)
 
-Domain-based Message Authentication, Reporting & Conformance .[DMARK](https://dmarc.org)
+Domain-based Message Authentication, Reporting & Conformance [DMARK](https://dmarc.org)
 
 ## OPENLDAP - 
 
@@ -134,7 +148,7 @@ OpenLDAP has three main components:
     libraries implementing the LDAP protocol and ASN.1 Basic Encoding Rules (BER)
     client software: ldapsearch, ldapadd, ldapdelete, and others
 
-Opensource LDAP server .[OPENLDAP](https://www.openldap.org/)
+Opensource LDAP server [openLDAP](https://www.openldap.org/)
 
 ## PHPLDAPADMIN
 
@@ -148,7 +162,7 @@ phpLDAPadmin is the perfect LDAP browser for the LDAP professional and novice al
 You might also like to see About. 
 </p>
 
-ldap adminsistration .[PHPLDAPADMIN](http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page)
+ldap adminsistration [phpLDAPadmin](http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page)
 
 ## GroupOffice 
 
@@ -166,7 +180,7 @@ It includes following features.
 *   Notes
 *   NewsLetters
 
-GroupOffice CRM .[GROUPOFFICE](https://www.group-office.com)
+[Group-Office](https://www.group-office.com) CRM
 
 
 ## DOCKER
@@ -177,7 +191,7 @@ In a way, Docker is a bit like a virtual machine. But unlike a virtual machine, 
 For copper email system also use docker due to it's toola are written in many languages and may wanted specific operating systems. Furthe system deployment is far more easy with docker. Copper has created their own images and hosted in docker.hub which may be pull from the hub when the system is deployed in user environments.
 </p>
 
-Why docker .[DOCKER](https://opensource.com/resources/what-docker)
+Why [Docker](https://opensource.com/resources/what-docker)?
 
 
 ## Kubernetes
@@ -194,4 +208,4 @@ Kubernetes has a number of features. It can be thought of as:
 Kubernetes provides a container-centric management environment. It orchestrates computing, networking, and storage infrastructure on behalf of user workloads. This provides much of the simplicity of Platform as a Service (PaaS) with the flexibility of Infrastructure as a Service (IaaS), and enables portability across infrastructure providers.
 How Kubernetes is a platform
 
-Kuubernetes .[KUBERNETES](https://kubernetes.io/docs/home/)
+[Kubernetes](https://kubernetes.io/docs/home/)
