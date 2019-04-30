@@ -8,6 +8,19 @@ repo_url: 'https://github.com/LSFLK/Copper'
 
 copyright: 'Copyright &copy; 2018 - 2019 Lanka Software Foundation'
 
+nav:
+    - Overview: Overview.md
+    - Features: Features.md
+    - Prerequisites: Prerequisites.md
+    - Installation: Installation.md
+    - Initial Configuration: Configuration.md
+    - Client Configuration: CConfiguration.md
+    - Groupware Features: userfeature.md
+    - Backup & Restoration: Backups.md
+    - Troubleshoot: troubleshoot.md
+    - Central Supervision: Hub.md
+    - Email security: issues.md
+    
 theme:
   name: 'mkdocs'
   palette:
