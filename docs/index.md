@@ -16,19 +16,7 @@ Lanka Software Foundation (LSF) was established in 2003 as a company limited by 
 
 ## Refferences
 
-Copper main repository is it's github repository.
-
-1. For Github repository visit [copper.github](https://github.com/LSFLK/Copper).
-
-2. Open source email solutions like :[emailserver](https://github.com/prabod/email-solution/tree/master/docker)
-
-3. Mail solution with rspamd [Tomav](https://github.com/tomav)
-  
-  
-4. openLdap solutions [RSPAMD](https://github.com/osixia/docker-openldap#quick-start)
-  
-
-5. Group office Groupware[GroupOffice](https://www.group-office.com/)
+Copper main repository is it's github repository [[Copper github](https://github.com/LSFLK/Copper)]
   
 
 <!-- Prometheus container pull and run: 
@@ -42,5 +30,4 @@ Grafana pull and run
 
 ## Contact us
     
-If you have any questions or doubts about Cu, please reach us via 
-You can [contact us](mailto:copper@opensource.lk)
+If you have any questions or doubts about Cu, please [contact us](mailto:copper@opensource.lk)
