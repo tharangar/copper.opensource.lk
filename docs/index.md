@@ -1,4 +1,4 @@
-# Motivation
+<!-- # Motivation
 <p align="justify">
 Organizations in Sri Lanka’s public sector, such as the Sri Lanka Army, need to own and operate their own email infrastructure as they are not in a position to use cloud services for such critical technology due to security, privacy and national independence concerns. This is a requirement not just for Sri Lanka but globally and is in fact not limited to the public sector.
 
@@ -9,11 +9,12 @@ While there are open source components for all parts of an email solution availa
 This project’s objective is to provide a comprehensive email solution which can be readily deployed without complex configuration and which receives active maintenance and support from this project team. It is expected that each organization would deploy this solution for itself in their own data center or a shared data center, but this project team will provide the professional support and management needed to install and operate the system safely and securely to whatever extent the organization needs. This can eventually even go as far as managed hosting for the organization. The intent is to provide extremely limited customization and tuning capability to end user administrators - certainly no more than what Google provides for Google Apps customers.
 
 The promotion and adoption of this solution by non public sector organizations is a secondary goal and interesting as a method of revenue generation. Our long term objective is to make this project self-funding in a not-for-profit manner.
-</p>
+</p> -->
 
 # What is an “Email Solution”?
 <p align="justify">
 The components include the following:
+</p>
 <ul>
     <li> Core 
         <ul>
