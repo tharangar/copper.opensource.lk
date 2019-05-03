@@ -1,34 +1,66 @@
-# Overview
+<!-- # Motivation
 <p align="justify">
-Email is the most reliable official communication method in current coporate
-environments. But Most companies are not willing to host their servers in remote cloud servers due to security issues. Futher Its cost is also high. But maintaining their own email server is one of prime goal in companies IT units.
-</p>
+Organizations in Sri Lanka’s public sector, such as the Sri Lanka Army, need to own and operate their own email infrastructure as they are not in a position to use cloud services for such critical technology due to security, privacy and national independence concerns. This is a requirement not just for Sri Lanka but globally and is in fact not limited to the public sector.
 
-## Copper Email Solution
-<p align="justify">
-Copper Email System is the solution developed by Lanka Software Foundation for those issues in the corporate sector. Obviously it is free and opensource. Its repositoty is open for any one to contribute. Further this solution is deployed over Kubernetes which is most advanced cloud server deplyment (Ochestration) framework in the world now.
-</p>
-## Lanka Software Foundation (LSF)
-<p align="justify">
-Lanka Software Foundation (LSF) was established in 2003 as a company limited by guarantee and as “not for profit” organization with the vision of positioning Sri Lanka as a “global Free and Open Source (FOSS) Research & Development hub”.
-</p>
+While there are now high quality proprietary off the shelf systems available, it is not acceptable to simply buy such a solution for reasons of cost, independence and control.
 
+While there are open source components for all parts of an email solution available, building the technical skill to put that together in a safe and secure operational manner requires significant technical skills that are not readily available in many public sector organizations.
+
+This project’s objective is to provide a comprehensive email solution which can be readily deployed without complex configuration and which receives active maintenance and support from this project team. It is expected that each organization would deploy this solution for itself in their own data center or a shared data center, but this project team will provide the professional support and management needed to install and operate the system safely and securely to whatever extent the organization needs. This can eventually even go as far as managed hosting for the organization. The intent is to provide extremely limited customization and tuning capability to end user administrators - certainly no more than what Google provides for Google Apps customers.
+
+The promotion and adoption of this solution by non public sector organizations is a secondary goal and interesting as a method of revenue generation. Our long term objective is to make this project self-funding in a not-for-profit manner.
+</p> -->
+
+# What is an “Email Solution”?
+<p align="justify">
+The components include the following:
+</p>
+<ul>
+    <li> Core 
+        <ul>
+            <li> ESMTP server </li>
+            <li> Scalable storage architecture for “cloud email” service experience and because public sector mail should be permanently archived (similar to the Google Vault service) </li>
+            <li> Webmail server </li>
+            <li> IMAP server </li>
+            <li> Virus and malware scanning tool </li>
+            <li> Spam filtering tool </li>
+        </ul>
+    </li>
+    <li> Clients
+        <ul>
+            <li> Browser client </li>
+            <li> Support for standard mobile clients for Android and iOS phones / tablets </li>
+            <li> (Optionally) Support for standard desktop clients for Windows, Linux and MacOS </li>
+        </ul>
+    </li>
+    <li> Mailing list / group system </li>
+    <li> Support for LDAP and SSO
+        <ul>
+            <li> Integration to organization wide LDAP directory for authentication </li>
+            <li> Web client integration to Single Sign On portal via SAML2 or OIDC </li>
+        </ul>
+    </li> 
+    <li> Secure mail
+        <ul>
+            <li> Support for MAC mail encryption and signing with key management from identity solution. </li>
+            <li> "Domain-based Message Authentication, Reporting & Conformance" protocol 
+                <ul>
+                    <li> Overview [https://dmarc.org/overview/](https://dmarc.org/overview/) </li>
+                    <li> Setup [https://dmarcguide.globalcyberalliance.org/#/](https://dmarcguide.globalcyberalliance.org/#/) </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+## Global opportunity
+<p align="justify">
+While we are building this solution to solve a critical need in Sri Lanka, the same requirement exists in many countries.
+</p>
 
 ## Refferences
 
-Copper main repository is it's github repository.
-
-1. For Github repository visit [copper.github](https://github.com/LSFLK/Copper).
-
-2. Open source email solutions like :[emailserver](https://github.com/prabod/email-solution/tree/master/docker)
-
-3. Mail solution with rspamd [Tomav](https://github.com/tomav)
-  
-  
-4. openLdap solutions [RSPAMD](https://github.com/osixia/docker-openldap#quick-start)
-  
-
-5. Group office Groupware[GroupOffice](https://www.group-office.com/)
+Copper main repository is it's github repository [[Copper github](https://github.com/LSFLK/Copper)]
   
 
 <!-- Prometheus container pull and run: 
@@ -42,5 +74,4 @@ Grafana pull and run
 
 ## Contact us
     
-If you have any questions or doubts about Cu, please reach us via 
-You can [contact us](mailto:copper@opensource.lk)
+If you have any questions or doubts about Cu, please [contact us](mailto:copper@opensource.lk)
